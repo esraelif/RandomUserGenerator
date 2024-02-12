@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-family: 'Open Sans';
+    background: url(desk-2325627_1280.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #000;
+    opacity: 0.7;
+    z-index: -1;
+}
+
+.user-profile {
+    background-color: #dcdcdc;
+    margin-top: 5%;
+    margin-left: 50%;
+    height: 27rem;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+
+}
+
+.profile-top {
+    background: linear-gradient(to right, #8e2de2, #4a00e0);
+    padding: 1rem;
+    text-align: center;
+    color: #fff;
+}
+
+.profile-top img {
+    border-radius: 50%;
+    border: 5px solid #fff;
+}
+
+.profile-top .profile-info {
+    margin-top: 2px;
+}
+
+
+.profile-bottom {
+    padding: 3rem 3rem 1rem 3rem;
+}
+
+.profile-bottom .profile-info {
+    background-color: #fff;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    box-shadow: rgba(50, 50, 93, 0.25), 0px 13px 37px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    transition: 0.5s ease;
+}
+
+.profile-info span#email {
+    overflow: visible;
+    white-space: nowrap;
+    max-width: 200px;
+
+    display: inline-block;
+
+}
+
+
+.profile-bottom .profile-info .material-icons {
+    margin-left: 0.5rem;
+    color: gray;
+}
+
+.profile-bottom .profile-info:hover {
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15)0px 1px 3px 1px;
+}
+
+button {
+    margin-top: 1rem;
+    margin-left: 45rem;
+    outline: none;
+    border: none;
+    padding: 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    box-shadow: rgba(50, 50, 93, 0.25), 0px 13px 37px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    transition: 0.5s ease;
+
+}
+
+button:hover {
+    background: linear-gradient(to right, #8e2de2, #4a00e0);
+    color: #fff;
+}
